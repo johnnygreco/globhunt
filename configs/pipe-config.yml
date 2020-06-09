@@ -1,0 +1,37 @@
+# main pipeline io
+io: '/Users/jgreco/Desktop/dev-gh'
+cache: '/Users/jgreco/Desktop/dev-gh/pipe-cache'
+
+# image parameters
+bands: 'gri'
+image_width: 60 # arcsec
+
+# hsc bright object mask
+use_hsc_bright_mask: 
+    phot: False
+    imfit: True
+
+# imfit options
+imfit_io: '/Users/jgreco/local-io/imfit-io'
+
+# daofinder options
+threshold: 3.0
+sharphi: 2.0
+sharplo: -1.0
+roundhi: 1.0
+roundlo: -1.0
+sigma_radius: 3.0
+
+# daogroup option
+crit_separation: 3.0
+
+# fitting options
+niters: 5
+fitshape: [21, 21]
+
+# matching options
+master_band: 'i'
+min_match_bands: 2
+max_match_sep: 1    # caution: should use 1
+
+save_residual_images: True
