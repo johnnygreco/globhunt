@@ -1,6 +1,5 @@
 # main pipeline io
 io: '/Users/jgreco/Desktop/dev-gh'
-cache: '/Users/jgreco/Desktop/dev-gh/pipe-cache'
 
 # image parameters
 bands: 'gri'
